@@ -2,9 +2,9 @@ package de.gregord.springboot.test.spring_5_recipes.ch_2_3;
 
 import de.gregord.springboot.test.spring_5_recipes.ch_2_1_2.Sequence;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class SequenceService {
 
     private final SequenceDao sequenceDao;
