@@ -16,3 +16,6 @@
 ## Run
 - Run command `docker-compose up`
 - Access to http://localhost/
+
+# What is the app about?
+The app is a project for the author to follow the book "Spring 5 Recipes 4th Edition".
