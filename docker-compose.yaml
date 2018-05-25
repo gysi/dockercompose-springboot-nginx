@@ -10,13 +10,22 @@ services:
    volumes:
    - ./nginx/conf.d:/etc/nginx/conf.d
   app:
-    restart: always
     build: ./app
     working_dir: /app
     volumes:
       - ./app:/app
     expose:
       - "8080"
-    command: mvn clean spring-boot:run
+    ports:
+      - "9001:9001"
+# use this command if you want to build your project within the container
+#    command: mvn spring-boot:run
+
+# using this command if you are building locally and don't want to build everytime you start your container
+    command: >
+              java
+              -Xdebug
+              -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9001
+              -jar target/springboot-test-1.0.0.jar
     depends_on:
       - nginx

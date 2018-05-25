@@ -1,4 +1,4 @@
-package com.hellokoding.springboot;
+package de.gregord.springboot.test;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
