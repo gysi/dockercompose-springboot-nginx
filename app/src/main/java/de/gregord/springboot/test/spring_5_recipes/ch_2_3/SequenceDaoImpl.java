@@ -1,7 +1,6 @@
 package de.gregord.springboot.test.spring_5_recipes.ch_2_3;
 
 import de.gregord.springboot.test.spring_5_recipes.ch_2_1_2.Sequence;
-import de.gregord.springboot.test.spring_5_recipes.ch_2_1_2.SequenceDao;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;

@@ -19,7 +19,6 @@ public class SequenceConfiguration {
         sequence.setInitial(100000);
         sequence.setSuffic("A");
         sequence.setPrefixGenerator(datePrefixGenerator());
-
         return sequence;
     }
 }
