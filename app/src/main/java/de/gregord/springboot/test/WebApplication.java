@@ -7,6 +7,7 @@ import de.gregord.springboot.test.spring_5_recipes.ch_2_5.Main_ch_2_5;
 import de.gregord.springboot.test.spring_5_recipes.ch_2_6.Main_ch_2_6;
 import de.gregord.springboot.test.spring_5_recipes.ch_2_7.Main_ch_2_7;
 import de.gregord.springboot.test.spring_5_recipes.ch_2_8.Main_ch_2_8;
+import de.gregord.springboot.test.spring_5_recipes.ch_2_9.Main_ch_2_9;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,7 +16,7 @@ public static final Logger logger = LoggerFactory.getLogger(WebApplication.class
 
     public static void main(String[] args) throws Exception {
 //        SpringApplication.run(WebApplication.class, args);
-        Main_ch_2_8.init();
+        Main_ch_2_9.init();
     }
 }
 
