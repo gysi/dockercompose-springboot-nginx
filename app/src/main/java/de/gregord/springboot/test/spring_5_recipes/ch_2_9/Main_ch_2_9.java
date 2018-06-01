@@ -22,7 +22,7 @@ public class Main_ch_2_9 {
         String someStringBean = ctx.getBean("someStringBean", String.class);
         log.info("Got some someStringBean");
         log.info("someStringBean: {}", someStringBean);
-
+// test commit
         log.info("closing context");
         ((AnnotationConfigApplicationContext) ctx).close();
     }
