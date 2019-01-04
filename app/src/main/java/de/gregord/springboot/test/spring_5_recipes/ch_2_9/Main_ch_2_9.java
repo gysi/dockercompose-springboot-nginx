@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Main_ch_2_9 {
     private static final Logger log = LoggerFactory.getLogger(Main_ch_2_9.class);
 
-    public static void init() throws IOException {
+    public static void init() {
         log.info("creating context");
         ApplicationContext ctx =
                 new AnnotationConfigApplicationContext(
@@ -22,7 +22,6 @@ public class Main_ch_2_9 {
         String someStringBean = ctx.getBean("someStringBean", String.class);
         log.info("Got some someStringBean");
         log.info("someStringBean: {}", someStringBean);
-// test commit 2
         log.info("closing context");
         ((AnnotationConfigApplicationContext) ctx).close();
     }
