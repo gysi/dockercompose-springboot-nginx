@@ -15,7 +15,11 @@
 
 ## Run
 - Run command `docker-compose up`
-- Access to http://localhost/
+- Access app at http://localhost/ (if there is any app :))
+
+## Run without docker
+- Run command `mvn spring-boot:run`
+- Access app at http://localhost/ (if there is any app :))
 
 # What is the app about?
 The app is a project for the author to follow the book "Spring 5 Recipes 4th Edition".
