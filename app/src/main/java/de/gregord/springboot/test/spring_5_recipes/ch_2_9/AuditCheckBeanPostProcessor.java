@@ -12,7 +12,7 @@ public class AuditCheckBeanPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        log.info("postProcessBeforeInitialization: {}", beanName);
+        log.info("postProcessBeforeInitialization name: {} type: {}", beanName, bean.getClass().getName());
         return bean;
     }
 
